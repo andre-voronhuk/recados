@@ -43,7 +43,7 @@
 
     DEFINE("HOST", "sql103.epizy.com");
     DEFINE("USR", "epiz_28604334");
-    DEFINE("PWD", "Kk1yBsUnu7vDWCi");
+    DEFINE("PWD", "");
     DEFINE("BD", "epiz_28604334_banco");
     $conexao = mysqli_connect(HOST, USR, PWD, BD);
 
@@ -56,7 +56,7 @@
         if (mysqli_query($conexao, $sql)) {
     ?>echo "mensagem enviada com sucesso";
     <script>
-        window.location.href = "http://voronhuk.epizy.com/index.php";
+        window.location.href = "https://voro.herokuapp.com/index.php";
     </script><?php
             } else {
                 echo "ERROR: Não foi possivel executar:  $sql. " . mysqli_error($conexao);
